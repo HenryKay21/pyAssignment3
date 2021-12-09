@@ -5,12 +5,23 @@
 
 # Defining the function
 def atmWithdraw():
-    customerName = input ("Please input your full name")
-
-    
-    
+    customerName = input ("Please enter your full name: ")
+    customerPIN = input ("Please enter your PIN number: ")
+   
     # Conditional statements
+    if (customerPIN == int(1234)):
+            amount = input("Please enter your withdraw amount: ")
+
+    else:
+            print("Incorrect PIN. Please enter the correct PIN number!")
+
+atmWithdraw()
+
 
     
     
-    # Return messages
+    
+
+    
+    
+    # Return messages 
