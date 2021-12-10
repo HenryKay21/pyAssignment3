@@ -6,22 +6,22 @@
 # Defining the function
 def atmWithdraw():
     customerName = input ("Please enter your full name: ")
-    customerPIN = input ("Please enter your PIN number: ")
+    customerPIN = int(input ("Please enter your PIN number: "))
+    openingBal = 500000
    
     # Conditional statements
     if (customerPIN == int(1234)):
-            amount = input("Please enter your withdraw amount: ")
+            amount = int(input("Please enter your withdraw amount: "))
+            if (amount <= openingBal):
+                openingBal -= amount
+                print("Your balance now is: ", openingBal)
+
+    # Return messages for the conditions        
+            else:
+                print("Dear customer your account balance is insufficient!")
 
     else:
             print("Incorrect PIN. Please enter the correct PIN number!")
 
 atmWithdraw()
-
-
-    
-    
-    
-
-    
-    
-    # Return messages 
+ 
