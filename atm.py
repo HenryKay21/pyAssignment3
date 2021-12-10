@@ -14,7 +14,7 @@ def atmWithdraw():
             amount = int(input("Please enter your withdraw amount: "))
             if (amount <= openingBal):
                 openingBal -= amount
-                print("Your balance now is: ", openingBal)
+                print("Your account balance is now: ", openingBal,".", "Thank you for banking with us!")
 
     # Return messages for the conditions        
             else:
